@@ -11,7 +11,7 @@ conexion = mysql.connector.connect(
     database="clima"
 )
 
-query = "SELECT temperatura, humedad, fecha_hora FROM lecturas"
+query = "SELECT temperatura, humedad FROM lecturas"
 df = pd.read_sql(query, conexion)
 conexion.close()
 
