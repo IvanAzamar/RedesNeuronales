@@ -18,7 +18,6 @@ void loop() {
     Serial.print(t);
     Serial.print(",");
     Serial.print(h);
-    Serial.println(");");
   }
 
   delay(5000); // cada 5 segundos
