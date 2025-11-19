@@ -15,7 +15,6 @@ void loop() {
   float t = dht.readTemperature();
 
   if (!isnan(h) && !isnan(t)) {
-    Serial.print("INSERT INTO lecturas (temperatura, humedad) VALUES (");
     Serial.print(t);
     Serial.print(",");
     Serial.print(h);
